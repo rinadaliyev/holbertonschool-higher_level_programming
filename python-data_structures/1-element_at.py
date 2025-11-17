@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/python3
 #data
 def element_at(my_list, idx):
    if idx< 0:
