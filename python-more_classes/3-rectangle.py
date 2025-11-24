@@ -6,7 +6,10 @@ class Rectangle:
     """Represents a rectangle."""
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle instance with optional width and height."""
+        """Initialize a new Rectangle instance.
+
+        width and height are optional and default to 0.
+        """
         self.width = width
         self.height = height
 
@@ -43,13 +46,17 @@ class Rectangle:
         return self.width * self.height
 
     def perimeter(self):
-        """Return the perimeter of the rectangle. Returns 0 if width or height is 0."""
+        """Return the perimeter of the rectangle.
+
+        Returns 0 if width or height is 0.
+        """
         if self.width == 0 or self.height == 0:
             return 0
         return 2 * (self.width + self.height)
 
     def __str__(self):
         """Return the rectangle as a string using '#' characters.
+
         Returns an empty string if width or height is 0.
         """
         if self.width == 0 or self.height == 0:
