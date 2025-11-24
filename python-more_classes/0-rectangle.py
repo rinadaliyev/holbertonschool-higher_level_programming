@@ -1,3 +1,9 @@
 #!/usr/bin/python3
-#Comment line
+"""
+This module defines an empty Rectangle class.
+"""
+
 class Rectangle:
+    """Represents a rectangle."""
+    pass
+
