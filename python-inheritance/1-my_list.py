@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-"'Comment'"
+"""Module defining MyList class."""
+
 
 class MyList(list):
-   "'Comment'"
+    """Custom list class that can print a sorted version of itself."""
 
-   def print_sorted(self):
-      "'comment'"
-      print(sorted(self))
+    def print_sorted(self):
+        """Print the list in ascending sorted order."""
+        print(sorted(self))
+
