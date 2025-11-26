@@ -3,4 +3,8 @@
 
 
 class BaseGeometry:
-    pass
+
+    def area(self):
+        """Comment exception"""
+
+        raise Exception("area() is not implemented")
