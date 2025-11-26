@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Comment Class"""
+"""
+Module that defines an empty BaseGeometry class.
+"""
 
 
 class BaseGeometry:
-
-    def area(self):
-        """Comment exception"""
-
-        raise Exception("area() is not implemented")
+    """Empty BaseGeometry class."""
+    pass
