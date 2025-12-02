@@ -1,22 +1,18 @@
 from flask import Flask, render_template
 import json
-import os
 
 app = Flask(__name__)
 
-@app.route("/items")
-def show_items():
-    # Read JSON file
+@app.route('/items')
+def items():
     try:
-        with open("items.json", "r") as f:
+        with open('items.json', 'r') as f:
             data = json.load(f)
-            items = data.get("items", [])
-    except FileNotFoundError:
-        items = []
-    except json.JSONDecodeError:
-        items = []
+            items_list = data.get("items", [])
+    except Exception:
+        items_list = []
+    return render_template('items.html', items=items_list)
 
-    return render_template("items.html", items=items)
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
 
-if __name__ == "__main__":
-    app.run()
